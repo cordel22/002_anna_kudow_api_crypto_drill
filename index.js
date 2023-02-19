@@ -88,4 +88,4 @@ axios.request(options).then((response) => {
 
 
 
-app.listen(process.env.PORT || 8000, () => console.log(`Server is running on port ${process.envPORT || PORT}`))
+app.listen(process.env.PORT || 8000, () => console.log(`Server is running on port ${process.env.PORT || PORT}`))
