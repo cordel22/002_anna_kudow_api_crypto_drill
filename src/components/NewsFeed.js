@@ -33,19 +33,21 @@ axios.request(options).then((response) => {
 	
 	
 	
-	const first7Articles = articles?.slice(0,7)
+	//	const first7Articles = articles?.slice(0,7)
 	
+	//	following code belongs to return, but doesnt connect to api
+		/*	seems that api is offline
+		{first7Articles?.map( (article, _index) => (
+			<div key={_index}>
+				<a href={article.url}><p>{article.title}</p></a>
+			</div>))}
+	*/
 	
   return (
     <div className="news-feed">
 		<h2>NewsFeed</h2>
 			
 
-	
-		{first7Articles?.map( (article, _index) => (
-			<div key={_index}>
-				<a href={article.url}><p>{article.title}</p></a>
-			</div>))}
 
     </div>
   );
